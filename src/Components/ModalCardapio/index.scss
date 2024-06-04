@@ -1,0 +1,89 @@
+.modal-cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 100%;
+    border-radius: 34px;
+    border: 2px solid var(--cor-dourado);
+    background-color: #FFFFFF;
+    padding: 58px 40px;
+    gap: 30px;
+
+    
+    .input_section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+
+        label{
+            text-wrap: nowrap;
+        }
+        
+        .input_texto {
+            border: 0;
+            border-bottom: 1px solid #B3ADA7;
+            background: transparent;
+            outline: 0;
+            width: 100%;
+        }
+
+        .grupos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input_textoGrupo {
+            border: none;
+            background: transparent;
+            outline: 0;
+            height: fit-content;
+        }
+
+        .button_adcionar {
+            cursor: pointer;
+        }
+    }
+
+    .selectTag {
+        display: flex;
+        flex-wrap: wrap;
+        width: 473px;
+        min-height: 115px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 15px;
+        gap: 10px;
+
+        .tag {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 12px;
+            padding: 5px 10px;
+            max-height: 28px;
+        }
+
+        .tag .tag_close {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            cursor: pointer;
+            color: #B3ADA7;
+        }
+
+    }
+
+    .button_salvar {
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+        padding: 8px 22px;
+        font-size: 1rem;
+        color: #ffffff;
+        background-color: #c42b09;
+        border-radius: 5px;
+    }
+}
