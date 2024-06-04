@@ -90,7 +90,7 @@
                 margin-bottom: -5vh;
             }
 
-            button {
+            a {
                 display: flex;
                 gap: 16px;
                 border: none;
@@ -100,6 +100,7 @@
                 font-family: "Goud Old";
                 font-size: 1.2rem;
                 align-items: center;
+                text-decoration: none;
             }
         }
     }
