@@ -28,12 +28,19 @@
 
     .text-container {
         padding-top: 10px;
-        text-align: center;
-    }
+        text-align:left;
 
-    .evento-title,
-    .evento-price {
-        margin: 0;
+        .evento-title{
+            font-family: "Harrigton";
+            color: var(--cor-dourado);
+            font-size: 1.3rem;
+        }
+        
+        p{
+            font-family: "Goud Old";
+            color: var(--cor-cinza-texto); 
+            margin: 0;
+        }
     }
 
 }
