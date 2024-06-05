@@ -114,7 +114,7 @@ export default function ModalProduto({ info, handleClose, id, tipo }) {
                 setDescricao(info.descricao)
                 setPesoProduto(info.peso)
                 setPrecoProduto(info.valor)
-                setGrupoEscolhido(info.nome_grupo)
+                setGrupoEscolhido(info.idGrupo)
                 const urlImagem = buscarImagem(info.imagem)
                 setImagem(urlImagem)
             }
@@ -159,7 +159,7 @@ export default function ModalProduto({ info, handleClose, id, tipo }) {
 
                 <div className='select'>
                     <select id="select" className="select_grupo" onChange={(e) => handleChangeTextArea(e, "grupo")}>
-                        <option value="" disabled selected hidden>{grupoEscolhido === "" ? "Selecionar Grupo" : grupoEscolhido}</option>
+                        <option value="" disabled selected hidden>{grupoEscolhido === "" ? "Selecionar Grupo" : info.nome_grupo}</option>
                         {grupos.map(grupo => (
                             <option key={grupo.id} value={grupo.id} >{grupo.nome}</option>
                         ))}
