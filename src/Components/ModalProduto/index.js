@@ -27,8 +27,8 @@ export default function ModalProduto({ info, handleClose, id, tipo }) {
         } else if (campo === "nomeProduto") {
             setNomeProduto(valor);
         } else if (campo === "grupo") {
-            console.log(valor);
-            setGrupoEscolhido(valor);
+            const grupo = grupos.find(g => g.id === Number(valor));
+            setGrupoEscolhido(grupo);
         } else if (campo === "peso") {
             setPesoProduto(valor);
         } else if (campo === "preco") {
@@ -163,7 +163,7 @@ export default function ModalProduto({ info, handleClose, id, tipo }) {
                     <select id="select" className="select_grupo" onChange={(e) => handleChangeTextArea(e, "grupo")}>
                         <option value="" disabled selected hidden>{Object.keys(grupoEscolhido).length === 0 ? "Selecionar Grupo" : grupoEscolhido.nome}</option>
                         {grupos.map(grupo => (
-                            <option key={grupo.id} value={grupo.id} >{grupo.nome}</option>
+                                <option key={grupo.id} value={grupo.id} >{grupo.nome}</option>
                         ))}
                     </select>
                 </div>
