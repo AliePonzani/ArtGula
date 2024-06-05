@@ -10,6 +10,7 @@ export async function salvar(caminho, body) {
 
 export async function alterar(caminho, id, body) {
     let url = API_Adress + `${caminho}/${id}`;
+    console.log(url);
     let resp = await axios.put(url, body);
     return resp.data;
 }

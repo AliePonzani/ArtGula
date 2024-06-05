@@ -89,9 +89,11 @@ export default function ModalProduto({ info, handleClose, id, tipo }) {
                     nome: nomeProduto,
                     descricao: descricao,
                     valor: precoProduto,
-                    peso: pesoProduto
+                    peso: pesoProduto,
+                    grupo: grupoEscolhido
                 };
-                await alterar(`produto/${grupoEscolhido}/${idCardapio}`, info.id, body);
+                console.log(body);
+                await alterar(`produto/${idCardapio}`, info.id, body);
             }
 
             if (imagemAlterada > 0) {

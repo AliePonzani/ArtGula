@@ -30,7 +30,7 @@ export default function TabelasCardapio() {
 
     const deletarCardapio = async () => {
         try {
-            const resp = await deletar('cardapio', id);
+            const resp = await deletar(tipo, id);
             if (resp.status === 200) {
                 alert(`${tipo} deletado com sucesso!`);
             }
