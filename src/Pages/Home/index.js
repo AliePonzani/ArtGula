@@ -218,7 +218,7 @@ export default function Home() {
 
         <div className='item_rodape'>
           <div >
-            <h4>Produtos</h4>
+            <h4>Cardápios</h4>
             <ul>
               {cardapios.map((cardapio, index) => (
                 <li key={index}>
@@ -229,7 +229,7 @@ export default function Home() {
           </div>
 
           <div >
-            <h4>local</h4>
+            <h4>Informações</h4>
             <ul>
               <li><a href='#sobre'>Sobre a gente</a></li>
               <li><a href='https://www.ifood.com.br/delivery/sao-paulo-sp/art--gula-doceria-indianopolis/6e026fd8-8268-493d-bd1b-6f0daa6aa6b2?utm_medium=share'>iFood</a></li>
